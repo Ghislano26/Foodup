@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --primary-color: #f57217;
+    --font-IBM: 'IBM Plex Sans', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --secondary-color: #aa4805;
+    --text-color: #5b5a5a;
+    --border-raduis: 1.2rem;
+    --gradient: linear-gradient(140deg, rgba(0, 0, 0, 0.85)0%, rgba(0, 0, 0, 0.3));
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-color: rgb(239, 239, 240);
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+.inkmail{
+    text-decoration: none;
+    color:  var(--body-color);
+}
+.head__id{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+    color: var(--body-color);
+    font-size: 1.2rem;
+}
+.head__id p{
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+}
+.head__id img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.head__reseau{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.head__reseau img{
+    width: 2rem;
+    height: 2rem;
+
+}
+.head__reseau__h3{
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+    
+}
+.head__reseau__a{
+    text-decoration: none;
+    font-family: var(--font-IBM);
+    color: var(--text-color);
+    padding: 1.2rem 1rem 1.2rem 1rem;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgba(255, 255, 255, .8);
+}
+.nav__logo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: green; */
+}
+.nav__logo h1{
+    font-size: 7rem;
+}
+.nav__logo span{
+    font-size: 8rem;
+    color: var(--primary-color);
+}
+.nav__link{
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+}
+/* .recipes__hover{
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    top: 10rem;
+    left: 56.5rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .9);
+    justify-content: space-around;
+    color: var(--secondary-color);
+    overflow: hidden;
+    padding: 2rem;
+    visibility: hidden;
+} */
+
+.nav__link a{
+   text-decoration: none;
+   font-size: 2rem;
+   color: var(--secondary-color);
+   font-family: var(--font-open-sans);
+   transition: 0.25s ease-out;
+}
+.nav__link a:hover{
+    color: var(--primary-color);
+    transform: scale(1.1);
+    /* border-bottom: 2px solid var(--secondary-color); */
+ }
+.nav__btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.nav__btn button{
+    width: 15rem;
+    height: 5rem;
+    border-radius: var(--border-raduis);
+    color: white;
+    font-family: var(--font-open-sans);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.nav__btn button:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+}
+.link_head{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header{
+    margin-top: 8rem;
+    width: 100%;
+    height: 75%;
+    background-image: var(--gradient), url(img/bann.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 1rem;
+}
+.header h1{
+    font-size: 5.7rem;
+    font-family: var(--font-IBM);
+    color: white;
+    font-weight: bold;
+}
+.header p{
+    font-size: 1.6rem;
+    color: white;
+    font-family: var(--font-open-sans);
+}
+.header__left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+}
+.header__left span{
+  color: var(--primary-color);
+}
+.header__right{
+    flex: 1;
+    /* background-color: red; */
+}
+
+.discover{
+    margin-top: 4rem;
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.discover__text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: black; */
+}
+.discover__text h1{
+    color: var(--text-color);
+    font-size: 4.2rem;
+    font-weight: bold;
+    font-family: var(--font-IBM);
+}
+.discover__text p{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-family: var(--font-open-sans);
+}
+.discover__img{
+    flex: 2;
+    background-color: lightgreen;
+    display: flex;
+}
+.discover__img__left{
+    flex: 1;
+    background-image: var(--gradient), url("/assets/img/ban.png");
+}
+.discover__img__right{
+    flex: 1;
+    background-color: #f57217;
+}

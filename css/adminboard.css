@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --primary-color: #f57217;
+    --font-IBM: 'IBM Plex Sans', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --secondary-color: #aa4805;
+    --text-color: #5b5a5a;
+    --border-raduis: 1.2rem;
+    --gradient: linear-gradient(140deg, rgba(0, 0, 0, 0.85)0%, rgba(0, 0, 0, 0.3));
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.Fluid_mouse{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.05s ease-in;
+    z-index: -1;
+}
+.head{
+    background-color: rgb(239, 239, 240);
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.inkmail{
+    text-decoration: none;
+    color:  var(--body-color);
+}
+.head__id{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+    color: var(--body-color);
+    font-size: 1.2rem;
+}
+.head__id p{
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+}
+.head__id img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.head__reseau{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.head__reseau img{
+    width: 2rem;
+    height: 2rem;
+
+}
+.head__reseau__h3{
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+    
+}
+.head__reseau__a{
+    text-decoration: none;
+    font-family: var(--font-IBM);
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgba(255, 255, 255, .8);
+}
+.nav__logo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: green; */
+}
+.nav__logo h1{
+    font-size: 6.5rem;
+}
+.nav__logo span{
+    font-size: 8rem;
+    color: var(--primary-color);
+}
+.nav__link{
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    /* background-color: aqua; */
+}
+/* .recipes__hover{
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    top: 10rem;
+    left: 56.5rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .9);
+    justify-content: space-around;
+    color: var(--secondary-color);
+    overflow: hidden;
+    padding: 2rem;
+    visibility: hidden;
+} */
+
+.nav__link a{
+   text-decoration: none;
+   font-size: 2rem;
+   color: var(--secondary-color);
+   font-family: var(--font-open-sans);
+   transition: 0.25s ease-out;
+}
+.nav__link a:hover{
+    color: var(--primary-color);
+    transform: scale(1.1);
+    /* border-bottom: 2px solid var(--secondary-color); */
+ }
+.nav__btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.nav__btn button{
+    width: 15rem;
+    height: 5rem;
+    border-radius: var(--border-raduis);
+    color: white;
+    font-family: var(--font-open-sans);
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.25s ease;
+    z-index: 1;
+}
+.nav__btn button:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+}
+.link_head{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.admin{
+    width: 100%;
+    height: 20%;
+    margin-top: 4rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+
+}
+.admin img{
+    width: 5rem;
+    height: 5rem;
+}
+.options{
+    width: 100%;
+    height: 50%;
+    margin-top: 5rem;
+    display: flex;
+}
+.options__cuisinier{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options__cuisinier__chief{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgb(78, 76, 76), -1.5px 1.5px 1.5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.options__cuisinier__chief img{
+    width: 15rem;
+    height: 15rem;
+}
+input[type="submit"]{
+    width: 15rem;
+    height: 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: var(--font-open-sans);
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.25 ease-out;
+}
+input[type="submit"]:hover{
+  transform: scale(1.1);
+}
+
+.options__modifier{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options__voir{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options__supprimer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire{
+    width: 80%;
+    margin: 0 auto;
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+    position: absolute;
+    left: -120rem;
+}
+.note{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+}
+.notice{
+    width: 20%;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font-open-sans);
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulaire form{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(173, 171, 171);
+    padding: 2rem;
+}
+.formulaire form h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-IBM);
+}
+input[type="mail"],
+input[type="text"]{
+    width: 80%;
+    height: 50%;
+    border-radius: var(--border-raduis);
+    outline-color: var(--primary-color);
+    padding: 1.5rem;
+    border: 1px solid var(--text-color);
+    outline: none;
+    margin-bottom: 2rem;
+}
+input[type="number"]{
+    width: 13rem;
+    height: 3rem;
+}
+label{
+    font-size: 2rem;
+    font-family: var(--font-open-sans);
+}
+.form__age{
+    width: 30%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form__sexe{
+    width: 20%;
+    height: 10%;
+    display: flex;
+    margin-left: 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.form__country{
+    width: 30%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#country{
+    width: 13rem;
+    height: 3rem;
+}
+.form__choise{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(10, 15, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+
+
+
